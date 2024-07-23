@@ -15,7 +15,7 @@ jobs:
       # replace "master" with any valid ref
       uses: ansible/ansible-lint-action@151b9a2
       with:
-        # [required]
+        [required]
         # Paths to ansible files (i.e., playbooks, tasks, handlers etc..)
         # or valid Ansible directories according to the Ansible role
         # directory structure.
@@ -23,7 +23,9 @@ jobs:
         # targets: |
         #   playbook_1.yml
         #   playbook_2.yml
+
         targets: "./"
+
         # [optional]
         # Arguments to be passed to the ansible-lint
 
@@ -46,4 +48,4 @@ jobs:
         #                         path to directories or files to skip. This option is
         #                         repeatable.
         #   -c C                  Specify configuration file to use. Defaults to ".ansible-lint"
-        args: "-q"
+        args: ""
